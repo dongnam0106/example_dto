@@ -26,6 +26,7 @@ public class ExampleService {
          * Don't use Mapstruct
          */
         ExampleEntity exampleEntity = new ExampleEntity();
+        //Convert dto to entity
         exampleEntity.toEntity(dto);
         repository.save(exampleEntity);
         return dto;
